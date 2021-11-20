@@ -1,0 +1,64 @@
+.tasks {
+  width: 70%;
+  max-width: 21rem;
+  margin: 2rem;
+  padding: 1.5rem;
+}
+
+.taskHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskHeader h2 {
+  margin: 0;
+}
+
+.taskHeader .taskClose {
+  background: none;
+  border: none;
+  position: absolute;
+  font-size: 20px;
+  right: -10px;
+  bottom: 17px;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+.pannel {
+  position: relative;
+  right: 10px;
+  width: 100%;
+  padding: 0 10px;
+  height: 19rem;
+  overflow: auto;
+}
+
+.pannel::-webkit-scrollbar {
+  /* display: none; */
+  display: block;
+  width: 7px;
+}
+.pannel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pannel::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 221, 221);
+  border-right: none;
+  border-left: none;
+  border-radius: 15px;
+}
+
+.pannel::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+.pannel::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px;
+}
