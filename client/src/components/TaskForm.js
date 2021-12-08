@@ -8,7 +8,7 @@ function TaskForm(props) {
   const [billable, setBillable] = useState(false);
   const [formIsValid, setFormIsValid] = useState(false);
 
-  // validating the form and Add activity will be//
+  // validating the form //
   useEffect(() => {
     setFormIsValid(
       projectName.trim().length >= 3 && taskName.trim().length >= 3
