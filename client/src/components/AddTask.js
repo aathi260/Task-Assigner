@@ -35,7 +35,7 @@ function AddTask(props) {
     //Binding the channel to pusher//
     const channel = pusher.subscribe("task");
     channel.bind("newTask", function (data) {
-      // Adding prevousState to the current State //
+      // Adding previousState to the current State //
       setTaskList((prevTasks) => {
         return [data, ...prevTasks];
       });
